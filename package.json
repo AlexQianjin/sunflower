@@ -1,0 +1,38 @@
+{
+  "name": "sunflower",
+  "version": "1.0.0",
+  "description": "A minimal Electron application with react",
+  "main": "main.js",
+  "scripts": {
+	"start": "electron .",
+	"webpackDev": "webpack --config webpack.config.js"
+  },
+  "repository": "https://github.com/AlexQianjin/sunflower",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo",
+	"react"
+  ],
+  "author": {
+    "name": "Alex Qin",
+    "email": "qianjin.qin@qq.com",
+    "url": "http://alexqin.cn"
+  },
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "electron": "~1.7.8",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
