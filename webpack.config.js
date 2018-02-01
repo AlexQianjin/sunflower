@@ -13,7 +13,7 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, 'public'),
 		filename: 'bundle.js',
-		publicPath: '/assets/'
+		publicPath: '/public/'
 	},
 	plugins: [
 		new webpack.optimize.OccurrenceOrderPlugin(),
@@ -45,5 +45,10 @@ module.exports = {
 	},
 	resolve: {
 		extensions: ['.js', '.jsx', '.css', '.less']
+	},
+	devServer: {
+		contentBase: path.join(__dirname, "/"),
+		compress: true,
+		port: 9000
 	}
 };
